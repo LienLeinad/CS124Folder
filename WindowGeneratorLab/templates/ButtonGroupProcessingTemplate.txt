@@ -1,0 +1,9 @@
+		for (Enumeration e = <FIELD_NAME>.getElements(); e.hasMoreElements(); )
+		{
+			JRadioButton rb = (JRadioButton) e.nextElement();
+			if (rb.isSelected())
+			{
+				model.set<U_FIELD_NAME>(rb.getText());
+				break;
+			}
+		}

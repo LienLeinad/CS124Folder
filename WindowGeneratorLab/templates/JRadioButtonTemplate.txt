@@ -1,0 +1,6 @@
+			// THIS IS THE BASIC FORM OF A RADIO BUTTON
+		{
+		JRadioButton rb = new JRadioButton("<LABEL>");
+		panel_1.add(rb);
+		<BUTTON_GROUP_NAME>.add(rb);
+		}

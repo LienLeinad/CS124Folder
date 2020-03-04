@@ -1,0 +1,17 @@
+		// THIS IS THE BASIC FORM OF A TEXT PANE
+		{
+		JPanel panel_1 = new JPanel();
+		panel.add(panel_1);
+		panel_1.setLayout(new BoxLayout(panel_1, BoxLayout.Y_AXIS));
+		
+		JLabel lblNewLabel = new JLabel("<LABEL>");
+		panel_1.add(lblNewLabel);
+		
+		<FIELD_NAME> = new JTextPane();
+		<FIELD_NAME>.setAlignmentX(Component.LEFT_ALIGNMENT);
+		panel_1.add(<FIELD_NAME>);
+		
+		JSeparator separator = new JSeparator();
+		separator.setPreferredSize(new Dimension(0, 20));
+		panel_1.add(separator);
+		}

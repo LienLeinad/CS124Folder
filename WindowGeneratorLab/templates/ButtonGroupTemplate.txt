@@ -1,0 +1,17 @@
+		// THIS IS THE BASIC FORM OF A SINGLE SELECTION
+		{
+		JPanel panel_1 = new JPanel();
+		panel.add(panel_1);
+		panel_1.setLayout(new BoxLayout(panel_1, BoxLayout.Y_AXIS));
+		
+		JLabel label = new JLabel("<LABEL>");
+		panel_1.add(label);
+		
+		<FIELD_NAME> = new ButtonGroup();
+		
+<RADIO_BUTTON_INITS>		
+	
+		JSeparator separator = new JSeparator();
+		separator.setPreferredSize(new Dimension(0, 20));
+		panel_1.add(separator);
+		}

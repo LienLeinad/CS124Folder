@@ -1,0 +1,114 @@
+package output;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.Enumeration;
+
+import javax.swing.JScrollPane;
+import javax.swing.JLabel;
+import javax.swing.JTextPane;
+import javax.swing.JToggleButton.ToggleButtonModel;
+import javax.swing.BoxLayout;
+import javax.swing.ButtonGroup;
+import javax.swing.JRadioButton;
+import javax.swing.JSpinner;
+import javax.swing.JCheckBox;
+import javax.swing.JButton;
+import javax.swing.JSeparator;
+import java.awt.Dimension;
+import javax.swing.ScrollPaneConstants;
+import java.awt.Component;
+
+public class MainFrame extends JFrame {
+
+	private JPanel contentPane;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					MainFrame frame = new MainFrame();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public MainFrame() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(new BorderLayout(0, 0));
+		
+		JScrollPane scrollPane = new JScrollPane();
+		contentPane.add(scrollPane, BorderLayout.CENTER);
+		
+		JPanel panel = new JPanel();
+		scrollPane.setViewportView(panel);
+		panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
+		
+		
+		// GENERATED UI CODE GOES HERE -- assume that you will add to rootPanel called "panel"
+		
+<UI_FIELD_INIT>
+		
+		// END GENERATED UI CODE
+		
+		
+		
+		JButton btnEchoSelections = new JButton("Echo selections");
+		btnEchoSelections.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				echo();
+			}
+		});
+		panel.add(btnEchoSelections);
+		
+	}
+	
+	
+	// GENERATED UI FIELDS GO HERE
+	
+<UI_FIELD_DECLARATIONS>	
+	
+	// END GENERATED UI FIELDS
+	
+	
+	
+	public void echo()
+	{
+		
+		<FULL_MODEL_NAME> model = new <FULL_MODEL_NAME>();
+		
+		// GENERATED FIELD PROCESSING 
+
+<UI_FIELD_PROCESSING>
+
+		// END GENERATED FIELD PROCESSING
+
+		System.out.println(model);
+		
+		
+	}
+
+}

@@ -1,2 +1,2 @@
 # CS124Folder
-Personal CS124 Folder for stuf
+Personal CS124 Folder for testing Android and other software
